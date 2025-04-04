@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="static/style/style.css">
+</head>
+<body>
+  <main>
+    <section>
+      <!-- start_container -->
+      <article class="start_container active_start_container">
+        <h1 class="game_name">Memory Game</h1>
+        <input type="text" class="player_name_input" placeholder="Player Name">
+        <button class="start_game_btn">Start</button>
+      </article>
+
+      <!-- game_container -->
+      <article class="game_container">
+        <div class="head">
+          <span class="player_name_box">
+            <h2 class="name_title">Name:</h2>
+            <p class="player_name"></p>
+          </span>
+          <span class="wrong_count_box">
+            <h2 class="wrong_title">Wrong Answers:</h2>
+            <p class="wrong_count"></p>
+          </span>
+        </div>
+        <div class="main"></div>
+      </article>
+
+      <!-- end_container -->
+      <article class="end_container">
+        <p class="end_text"></p>
+        <button class="reset_btn">Reset</button>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="copy_right">
+      <p>&copy; 2025 <span>Mazen Hashem</span> All Right Reserved</p>
+    </div>
+  </footer>
+
+  <audio class="true_sound" src="static/sound/true-sound.mp3" preload="auto"></audio>
+  <audio class="false_sound" src="static/sound/false-sound.wav" preload="auto"></audio>
+  
+  <script src="dynamic/index.js"></script>
+</body>
+</html>
